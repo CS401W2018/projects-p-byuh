@@ -1,33 +1,40 @@
+<!--Jan-29-25--Pomaikai Jones-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="styles.css">
+    <base href="https://cs401w2018.github.io/projects-p-byuh/">
+    <link rel="stylesheet" href="projects/interests/styles.css">
     <script>
         function toggleDarkMode() {
             var element = document.body;
             element.classList.toggle("dark-mode");
         }
     </script>
-    <title>Document</title>
+    <title>Interests Page</title>
 </head>
 <body>
     <header>
-        <h1>Web Site Design | Pōmaikaʻi Jones</h1>
+        <h1>Food & Culture | Pōmaikaʻi Jones</h1>
         
     </header>
     
     <nav>
-        <a href="interest.html">Interests</a>
-        <a href="hero.html">Hero</a>
+        <a href="projects/interests/interest.html" class="active">Interests</a>
+        <a href="projects/interests/hero.html">Hero</a>
     </nav>
     <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     <hr>
     <main>
         <section>
-        <h2>Engagement Questions</h2>
+        <h2>How food brings us together</h2>
+            <p>Food is a universal language, that travels beyond borders bringing people together through shared flavors and traditions. Every meal tells a story, reflecting history, culture, and the values of a community.</p>
+            <p>From a simple act of breaking bread with strangers to passing down cherished family dishes, the act of sharing a meal strengthns relationships and preserves our traditions Food connects us all, no matter who we are.</p>
+            <!--Relative and absolute links-->
+        <h2>Absolute vs Relative Links</h2>
+            <p>A relative link redirects to a location relative of the root directory, typically to another webpage on your site. You use a relative link when linking to a page within your website/domain, for example: <a href="projects/profilePage.html">Profile Page</a>. An absolute link contains the Protocol (https://), Domain (byuh.edu), and Path (/cs-140). For example: <a href="https://github.com/">https://github.com/</a>.</p>
         </section>
     </main>
     <hr>
