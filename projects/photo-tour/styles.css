@@ -13,6 +13,7 @@ body {
     background-blend-mode: normal;
     background-color: white;
     background-size: auto;
+    overflow: hidden;
     /* overflow-x: visible; */
 }
 
