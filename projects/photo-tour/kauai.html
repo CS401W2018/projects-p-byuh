@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Kauai | Photo Tour</title>
+    <script>
+        function toggleDarkMode() {
+            element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hawaii.html">Hawaiʻi</a></li>
+                <li><a href="maui.html" >Maui</a></li>
+                <li><a href="molokai.html" >Molokaʻi</a></li>
+                <li><a href="oahu.html" >Oʻahu</a></li>
+                <li><a href="kauai.html" class="active">Kauai</a></li>
+            </ul>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+                <img id="darkModeIcon" src="assets/sun.png" alt="Toggle Dark Mode">
+            </button>
+        </nav>
+
+        <h1>Kauai</h1>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Photos</h2>
+            <div class="photoBar">
+                <ul>
+                    <li class="photo-item">
+                        <img src="assets/kauai-town.webp" alt="" width="320" height="240">
+                        <p>Hanalei Town, Kauai with a view of Mt. Namolokama and Mt. Mamalahoa.</p>
+                    </li>
+                    <li class="photo-item">
+                        <a href="https://en.wikipedia.org/wiki/Kauai#/media/File:Falls_at_Waimea_Canyon.jpg"><img src="assets/kauai-canyon.webp" alt="" width="320" height="234"></a>
+                        <p>Waipoʻo Falls at Waimea Canyon State Park.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div>&copy; 2025 Pōmaikaʻi Jones</div>
+    </footer>
+</body>
+</html>

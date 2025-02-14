@@ -1,0 +1,59 @@
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    transition: background-color 0.3s ease, background-blend-mode 0.3s ease;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dark-mode {
+    background-color: black;
+    color: darkgray;
+}
+
+.dark-mode a {
+    color: palegreen;
+}
+
+a.active {
+    font-weight: bold;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px
+    
+}
+
+.nav-links a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border-radius: 5px; 
+    transition: width 1s; 
+    text-decoration: none;
+}
+
+.nav-links a.active {
+    background-color: cadetblue;
+}
+
+
+.nav-links a:hover {
+    background-color: #007bff;
+    transition: 0.5s;
+}

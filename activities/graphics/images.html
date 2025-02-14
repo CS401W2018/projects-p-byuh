@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Engagement - Background Images</title>
+    <script>
+        function toggleDarkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+    <style>
+        .dark-mode {
+            background-color: #0f0f0f;
+        }
+        body {
+            background-image: url('trees.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-color: aliceblue;
+            background-blend-mode: overlay;
+        }
+        .myList {
+            list-style-image: url('favicon.ico');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Images | Pōmaikaʻi Jones</h1>
+    </header>
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Graphics</a></li>
+            <li><a href="images.html" class="active">Images</a></li>
+        </ul>
+    </nav>
+
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Background Images</h2>
+            <ul class="myList">
+                <li>Repeating</li>
+                <li>Non-repeating</li>
+                <li>List marker</li>
+            </ul>
+            <h2>Engagement Questions</h2>
+            <h3>When should you use a background image, and when should you use the IMG tag?</h3>
+            <p>You use a background image when the image is a part of your webpage's design. You should use an image tag when the image is a part of the page's content.</p>
+        </section>
+    </main>
+
+    <hr>
+    
+    <footer>
+        &copy; 2025 Pōmaikaʻi Jones
+    </footer>
+</body>
+</html>

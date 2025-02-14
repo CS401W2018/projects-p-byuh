@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Engagement - Web Graphics</title>
+    <script>
+        function toggleDarkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Graphics | Pōmaikaʻi Jones</h1>
+    </header>
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Graphics</a></li>
+            <li><a href="images.html" >Images</a></li>
+        </ul>
+    </nav>
+
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Graphics</h2>
+            <img class="wave" src="wave.jpeg" alt="Man surfing large wave at the Eddie's" width="300">
+        </section>
+
+        <section>
+            <h2>Engagement Questions</h2>
+            <h3>What kind of photos are good to encode using JPEG?</h3>
+            <p>JPEG is generally ideal for real-life photos, where small compression artefacts are okay. Since JPEG is lossly encoding, some quality is lost when using JPEG, but the image file is much smaller, making it ideal for general web usage.</p>
+            <h3>What kind of photos are good to encode using GIF?</h3>
+            <p>GIFs, unlike PNG or JPEG, supports simple graphical animations. You would ideally use GIFs for simple cartoons or logos, that do not use a lot of colors.</p>
+            <h3>What is unique about the PNG format?</h3>
+            <p>PNG images are encoded in a lossless compression format. This means that quality is not lost during the compression process. However, this allows PNGs to result as a much larger image file.</p>
+            <p>PNG format also supports transparency unlike GIFs or JPEGs, allowing support different colored backgrounds on webpages.</p>
+            <h3>How do you resize your photo to the size it should be displayed?</h3>
+            <p>You can resize your photo in your tag attributes, such as src=''image.jpeg'' height=''300'' width=''200''.</p>
+            <p>Providing only one parameter will automatically scale the image, maintaining the pixel ratio.</p>
+            <h3>Why should you resize photo editing software instead of resizing it using CSS?</h3>
+            <p>This reduces the bandwith load of your website, increasing your user's load time and browser processing requirements.</p>
+        </section>
+    </main>
+
+    <hr>
+    
+    <footer>
+        &copy; 2025 Pōmaikaʻi Jones
+    </footer>
+</body>
+</html>

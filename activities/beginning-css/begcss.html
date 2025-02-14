@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <!--<base href="https://cs401w2018.github.io/projects-p-byuh/">-->
+    <link rel="stylesheet" href="../styles.css">
+    <script>
+        function toggleDarkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+    <style>
+        h2 { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+    </style>
+    <title>Engagement - Beginning CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Beginning CSS | Pōmaikaʻi Jones</h1>   
+    </header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="begcss.html" class="active">Beginning CSS</a></li>
+            <li><a href="selectors.html">Selectors</a></li>
+        </ul>
+    </nav>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <hr>
+    <main>
+        <section>
+            <h2>Inline CSS</h2>
+            <p>While not technically wrong, is not best practice. Inline styles are specfically applied to a tag or element. <span style= "color: palevioletred">This is done using the 'style' attribute in a tag opening</span>.</p>
+            <h2>Embedded CSS</h2>
+            <p>The second order of priority, embedded CSS uses a &#x003c;style&#x003e; tag inside the head. This applies the CSS styling solely within the wepage.</p>
+            <h2>External CSS</h2>
+            <p>The least prioritized, external CSS references a .css file outside the HTML file.</p>
+            <p>You should use external CSS because this allows for multiple pages to reference the same styling configuration for a consistent theme, and easier  coordination for a development team.</p>
+            <h2>What is a selector used for?</h2>
+            <p>Selectors are used in CSS to specify which tag to apply the styling to. You can apply a selector a type (aka type selector), such as header or paragraph tags. You can also use a class selector, which will apply the styling to all tags with the given class.</p>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        &copy; 2025 Pōmaikaʻi Jones
+    </footer>
+</body>
+</html>

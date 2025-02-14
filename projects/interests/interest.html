@@ -1,0 +1,59 @@
+<!--Jan-29-25 Pomaikai Jones-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleDarkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+    <style>
+        #foodTitle { color:darkred }
+        .dark-mode #foodTitle { color: lightcoral }
+    </style>
+    <title>Interests Page</title>
+</head>
+<body>
+    <header>
+        <h1>Food & Culture | Pōmaikaʻi Jones</h1>
+        
+    </header>
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="interest.html" class="active">Interests</a></li>
+            <li><a href="hero.html">Hero</a></li>
+        </ul>  
+    </nav>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <hr>
+    <main>
+        <section>
+        <h2 id = "foodTitle">How food brings us together</h2>
+            <p>Food is a universal language, that travels beyond borders bringing people together through shared flavors and traditions. Every meal tells a story, reflecting history, culture, and the values of a community.</p>
+            <p><span style= "font-variant: small-caps; font-size: large;">From a simple act of breaking bread with strangers</span> to passing down cherished family dishes, the act of sharing a meal strengthns relationships and preserves our traditions Food connects us all, no matter who we are.</p>
+            <!--Relative and absolute links-->
+        </section>
+        
+        <section>
+        <h2>Absolute vs Relative Links</h2>
+            <p>A relative link redirects to a location relative of the root directory, typically to another webpage on your site. You use a relative link when linking to a page within your website/domain, for example: <a href="projects/profilePage.html">Profile Page</a>. An absolute link contains the Protocol (https://), Domain (byuh.edu), and Path (/cs-140). For example: <a href="https://github.com/">https://github.com/</a>.</p>
+        <h2>CSS Styling</h2>
+            <ul>
+                <li style="color:darkred">I used dark red to emphasize the first h2.</li>
+                <li style="color:gray">I used gray to de-emphasize the footer.</li>
+                <li>I picked colors based off the CCH color scheme, so light and dark reds and browns.</li>
+            </ul>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        &copy; 2025 Pōmaikaʻi Jones
+    </footer>
+</body>
+</html>

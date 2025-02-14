@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <!--<base href="https://cs401w2018.github.io/projects-p-byuh/">-->
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleDarkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+    <style>
+        #idexample { font-family: 'Arial Narrow', Arial, sans-serif; }
+        .class_example {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    </style>
+    <title>Engagement - CSS Selectors</title>
+</head>
+<body>
+    <header>
+        <h1>Selectors | Pōmaikaʻi Jones</h1>   
+    </header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="begcss.html">Beginning CSS</a></li>
+            <li><a href="selectors.html" class="active">Selectors</a></li>
+        </ul>
+    </nav>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <hr>
+    <main>
+        <section>
+            <h2>List out the different ways to select an item</h2> <!--Source: https://www.w3schools.com/css/css_selectors.asp-->
+            <div>
+                <ul>
+                    <li>Select an element simply by name (ex: "p")</li>
+                    <li>Select by the ID name (ex: "#myID")</li>
+                    <li>Select all elements with the given class (ex: ".myClass"). Multiple classes can be with a space (ex: "class1 class2")</li>
+                    <li>You can even select only tags with a specific tag (ex: "p.myClass")</li>
+                    <li>* is the universal selector, which affets all HTML elements.</li>
+                    <li>You can apply CSS styling to multiple elements (ex: "h3, h4 {...}")</li>
+                    <li>A descendant selector applies to all matching elements inside a specific element (ex: "div p {...}"")</li>
+                    <li>Psuedo classes use a colon to refer to an element's special state (ex: "a:hover")</li>
+                </ul>
+            </div>
+            <h2>What is the difference between an ID and a Class?</h2>
+            <p id = "id_example">ID's are used as an attribute for a specific tag (i.e. one only), whereas classes can apply for multiple different tags.</p>
+            <p class = "class_example">In practice, ID's are typically a noun, whereas classes are usually an adjective describing what the class does.</p>
+            <h2>What is the difference between a SPAN tag and a DIV tag</h2>
+            <p>Both a <span style="font-size: large;">span and a div tag can be used for CSS styling</span>, but div tags are used for grouping elements of a webpage together. The span tag is typically for inline styling.</p>
+            <h2>What is the difference between a DIV tag and a HEADER, MAIN, or FOOTER?</h2>
+            <p>The div tag, unlike header, main, and footer, is non-semantic, meaning it is not recognized as a meaningful divison of the website by crawlers.</p>
+            <h2>What are the different ways to select a color?</h2>
+            <ul>
+                <li style="color:#00FFA2">Hexadecimal (ex: "#00FFA2")</li>
+                <li style="color:rgb(100,60,90)">RGB (ex: "rgb(100,60,90)")</li>
+                <li style="color:rgba(100,60,90,0.7)">RGBA (ex: "rgb(100,60,90,0.7)" where A is the alpha or transparency)</li>
+                <li style="color:cyan">Name (ex: "cyan")</li>
+                <li>HSL (hue, saturation, lighness) (ex: "hsl(115, 50%, 60%))</li>
+            </ul>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        &copy; 2025 Pōmaikaʻi Jones
+    </footer>
+</body>
+</html>

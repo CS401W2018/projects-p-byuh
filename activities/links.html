@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <base href="https://cs401w2018.github.io/projects-p-byuh/">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleDarkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+    <title>Engagement - Links</title>
+</head>
+<body>
+    <header>
+        <h1>Web Site Design | Pōmaikaʻi Jones</h1>
+        
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="activities/tags.html">More about Tags</a></li>
+            <li><a href="projects/internetWeb.html">Web Terms</a></li>
+        </ul>
+    </nav>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <hr>
+    <main>
+        <section>
+        <h2>Engagement Questions</h2>
+            <h3>Link to an outside website with an absolute link.</h3>
+            <p><a href="https://speeches.byuh.edu/devotional-executive-committee-of-byu-hawaiis-board-of-trustees-2025-01-28">Devotional Text</a></p>
+            <h3>Explain the difference between an absolute link and a relative link. Why would you use relative links?</h3>
+            <p>An absolute link contains the Protocol (https://), Domain (byuh.edu), and Path (/cs-140). A relative only has the path.</p>
+            <p>You use absolute link when linking to a webpage outside of your domain. You use a relative link when linking to a page within your website/domain, for example: <a href="projects/profilePage.html">Profile Page</a></p>
+            <h3>Link to another engagement assignment (something in the activity folder).</h3>
+            <p><a href="activities/structureTags.html">Structure Tags</a></p>
+            <h3>List the 3 rules with relative links.</h3>
+            <p>
+                <ol>
+                    <li>Same folder: &quot;file.html&quot;</li>
+                    <li>Child folder: &quot;folder/file.html&quot;</li>
+                    <li>Up: &quot;../file.html&quot;</li>
+                </ol>
+            </p>
+            <h3>Link to your last project.</h3>
+            <p><a href="projects/profilePage.html">Profile Page</a></p>
+            <h3>Do links always need to be inside a NAV tag?</h3>
+            <p>No. Links can be anywhere on the page. The NAV tag are used for links that help navigate the user through your website. Ideally, the nav is consistent between all pages.</p>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        &copy; 2025 Pōmaikaʻi Jones
+    </footer>
+</body>
+</html>
