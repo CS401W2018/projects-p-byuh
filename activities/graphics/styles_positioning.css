@@ -1,0 +1,55 @@
+
+
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, background-blend-mode 0.3s ease;
+    font-family: 'Lato Extended','Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+.moving {
+    position: relative;
+    top: 50px;
+    left: 40px;
+}
+
+.floating{
+    float: right;
+}
+
+.flower {
+    border: thin solid black;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);   
+}
+
+.flower img {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+a.active {
+    font-weight: bold;
+}
+
+.nav-links li:hover {
+    background-color: #eeff00;
+    transition: 0.5s;
+} 
