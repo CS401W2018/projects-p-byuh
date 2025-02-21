@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(61, 67, 43);
+    color: rgba(255, 255, 255, 0.75);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+#wrapper {
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    border: thin solid rgba(255, 255, 255, 0.034);
+    border-radius: 1px;
+
+    background-image: url('sasia.png');
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-size;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    display: 
+    
+}
+
+nav li a {
+    color:inherit;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: thin solid;
+}
+
+footer {
+    bottom: 0;
+    text-align: center;
+    color:  rgba(255, 255, 255, 0.25);
+}
