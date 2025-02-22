@@ -2,21 +2,34 @@ body {
     background-color: rgb(61, 67, 43);
     color: rgba(255, 255, 255, 0.75);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
+    font-weight: lighter;
+    font-size: medium;
 }
 
 #wrapper {
-    width: 500px;
+    width: 800px;
+    height: 1000px;
     margin: 10px auto;
-    padding: 10px;
+    padding: 10px 50px;
     border: thin solid rgba(255, 255, 255, 0.034);
     border-radius: 1px;
 
     background-image: url('sasia.png');
     background-repeat: no-repeat;
     background-blend-mode: overlay;
-    background-size;
+    background-attachment: fixed;
+    background-position: center;
 }
+
+header {
+    margin: 40px 0;
+}
+
+h1, h2, h3 {
+    text-transform:lowercase;
+    text-shadow: 2px 2px rgb(39, 43, 28);
+}
+
 
 nav {
     float: right;
@@ -28,7 +41,8 @@ nav ul {
 }
 
 nav li {
-    display: 
+    margin: 0 10px;
+    padding: 5px;
     
 }
 
@@ -37,8 +51,20 @@ nav li a {
     text-decoration: none;
 }
 
-nav a:hover {
+nav li:hover {
     border: thin solid;
+    border-radius: 1px;
+}
+
+.floating{
+    float: right;
+    font-style: italic;
+}
+
+.floatimg {
+    border: thin solid black;
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);   
 }
 
 footer {
