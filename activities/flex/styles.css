@@ -1,5 +1,10 @@
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px 50px;
+    background-color: rgb(43, 52, 67);
+    color: rgba(255, 255, 255, 0.75);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: medium;
 }
 
 .parent {
@@ -40,11 +45,17 @@ nav li a {
     text-decoration: none;
 }
 
-#active {
-    background-color: ;
+.active {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgb(43, 52, 67);
 }
 
 nav li:hover {
     outline: thin solid;
     border-radius: 1px;
+}
+
+footer {
+    text-align: center;
+    color:  rgba(255, 255, 255, 0.25);
 }
