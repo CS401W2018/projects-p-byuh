@@ -1,0 +1,83 @@
+body {
+    margin: 10px 50px;
+    background-color: rgb(43, 52, 67);
+    color: rgba(255, 255, 255, 0.75);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: medium;
+}
+
+.parent {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.child {
+    background-color: rgba(255, 255, 255, 0.10);
+    outline: thin solid rgba(255, 255, 255, 0.15);
+    margin: 5px;
+    min-width: fit-content;
+    width: 20%;
+    max-width: 200px;
+}
+
+figcaption {
+    max-width: 200px;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
+header {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+header nav {
+    align-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    display: block;
+    padding: 10px 20px;
+}
+
+nav li a {
+    display: block;
+    color:inherit;
+    text-decoration: none;
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgb(43, 52, 67);
+}
+
+nav li:hover {
+    outline: thin solid rgba(255, 255, 255, 0.85);
+}
+
+.content {
+    display: flex;
+    height: 100vh;
+}
+
+aside {
+    width: 175px;
+    margin-right: 15px;
+    padding: 0 5px;
+}
+
+
+footer {
+    text-align: center;
+    color:  rgba(255, 255, 255, 0.25);
+}
