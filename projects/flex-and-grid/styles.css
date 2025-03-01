@@ -11,13 +11,14 @@ header {
     min-width: fit-content;
     margin: 5px;
     display: flex;
+    white-space: nowrap;
     justify-content: space-between;
     flex-direction: row;
     border-bottom: thin solid;
 }
 
 header nav {
-    align-content: center;
+    align-content: end;
 }
 
 nav ul {
@@ -45,6 +46,15 @@ nav li:hover {
     outline: thin solid rgba(255, 255, 255, 0.85);
 }
 
+aside {
+    display: block;
+    min-width: 175px;
+    max-width: 250px;
+    margin-right: 15px;
+    padding: 0 5px;
+    /* outline: thin dashed yellow; */
+}
+
 .content {
     display: flex;
     height: 100vh;
@@ -53,20 +63,19 @@ nav li:hover {
 .parent {
     display: flex;
     flex-flow: row wrap;
-
+    justify-content: end;
 }
 
 .child {
-    background-color: rgba(255, 255, 255, 0.10);
+    background-color: rgba(134, 48, 48, 0.1);
     outline: thin solid rgba(255, 255, 255, 0.15);
     margin: 5px;
-    min-width: fit-content;
-    width: 20%;
-    max-width: 200px;
+    width: 200px;
 }
 
-.child img {
+.child img, aside img {
     box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    outline: thin solid rgba(0,0,0,0.3);
 }
 
 .child img:hover {
@@ -85,20 +94,13 @@ figcaption {
 main {
     /* outline: thin dashed orange; */
     width: 100%;
+    min-width: 425px;
 }
 
 /* body {
     outline: thin dotted rgba(255, 0, 0, 0.35);
 } */
 
-aside {
-    display: block;
-    min-width: 175px;
-    max-width: 250px;
-    margin-right: 15px;
-    padding: 0 5px;
-    /* outline: thin dashed yellow; */
-}
 
 .popup-container {
     display: none;
@@ -110,6 +112,7 @@ aside {
     background: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
+    z-index: 9999;
 }
 
 .popup-container img {
@@ -134,8 +137,8 @@ footer {
 footer .dagrid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 4;
     margin: auto;
+    padding: 10px;
 }
 
 footer .dagrid a {
@@ -144,5 +147,6 @@ footer .dagrid a {
 }
 
 footer .dagrid a:hover {
-    outline: thin solid rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.85);
+    color: rgb(43, 52, 67);
 } 

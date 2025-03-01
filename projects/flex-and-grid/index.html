@@ -8,6 +8,19 @@
     <meta name="description" content="Demonstrating CSS Flex and Grid design.">
     <title>Project - Flex and Grid</title>
 </head>
+<!-- Script for popup display on clicking images -->
+<script>
+    function showPopup(imageUrl) {
+        const popup = document.getElementById("imagePopup");
+        const popupImg = document.getElementById("popupImage");
+        popup.style.display = "flex";
+        popupImg.src = imageUrl;
+    }
+
+    function hidePopup() {
+        document.getElementById("imagePopup").style.display = "none";
+    }
+</script>
 <body>
     <header>
         <h1>Flex and Grid</h1>
@@ -27,26 +40,13 @@
         <img id="popupImage" src="images/vasily1.webp" alt="Full Size Image">
     </div>
 
-    <script>
-        function showPopup(imageUrl) {
-            const popup = document.getElementById("imagePopup");
-            const popupImg = document.getElementById("popupImage");
-            popup.style.display = "flex"; // Show popup
-            popupImg.src = imageUrl; // Set clicked image source
-        }
-
-        function hidePopup() {
-            document.getElementById("imagePopup").style.display = "none"; // Hide popup
-        }
-    </script>
- 
-
     <div class="content">
         <aside>
-            <h4>Artist</h4>
+            <h4>The Artist</h4>
+            <img src="images/portrait.webp" alt="Portrait of the Artist Vasily Vereshchagin by Ivan Kramskoy." onclick="showPopup('https://uploads4.wikiart.org/images/ivan-kramskoy/portrait-of-the-artist-vasily-vereshchagin-1883.jpg')">
             <p>Vasily Vereshchagin</p>
             <p>Born 1842 in the Russian Empire, Vasily was a Realism artist who depicted scenes across central Asia.</p>
-            <p>Click an image to view the full size.</p>
+            <p><em>Click an image to view the full size.</em></p>
         </aside>
 
         <main>
