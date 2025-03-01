@@ -22,31 +22,86 @@
         </nav>
     </header>
 
-    <hr>
-
-    <div class="content">
-    <aside>
-        <h4>Sidebar</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </aside>
+    <div class="popup-container" id="imagePopup" onclick="hidePopup()">
+        <span class="close">&times;</span>
+        <img id="popupImage" src="" alt="Full Size Image">
     </div>
 
-    <main>
-        <div class="parent">
-            <figure class="child">
-                <img  src="images/vasily1.webp" alt="">
-                <figcaption>Tomb of Sheikh Salim Chishti in Fatehpur Sikri.</figcaption>
-            </figure>
-            <div class="child">Item B</div>
-            <div class="child">Item C</div>
-            <div class="child">Item D</div>
-            <div class="child">Item E</div>
-            <div class="child">Item F</div>
-        </div>
-    </main>
+    <script>
+        function showPopup(imageUrl) {
+            const popup = document.getElementById("imagePopup");
+            const popupImg = document.getElementById("popupImage");
+            popup.style.display = "flex"; // Show popup
+            popupImg.src = imageUrl; // Set clicked image source
+        }
+
+        function hidePopup() {
+            document.getElementById("imagePopup").style.display = "none"; // Hide popup
+        }
+    </script>
+ 
+
+    <div class="content">
+        <aside>
+            <h4>Artist</h4>
+            <p>Vasily Vereshchagin</p>
+            <p>Born 1842 in the Russian Empire, Vasily was a Realism artist who depicted scenes across central Asia.</p>
+        </aside>
+
+        <main>
+            <div class="parent">
+                <figure class="child">
+                    <img src="images/vasily1.webp" alt="" onclick="showPopup('https://upload.wikimedia.org/wikipedia/commons/5/5c/%D0%93%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D1%86%D0%B0_%D0%A8%D0%B5%D0%B9%D1%85%D0%B0_%D0%A1%D0%B5%D0%BB%D0%B8%D0%BC%D0%B0_%D0%A7%D0%B8%D1%88%D1%82%D0%B8_%D0%B2_%D0%A4%D0%B0%D1%82%D0%B5%D1%85%D0%BF%D1%83%D1%80-%D0%A1%D0%B8%D0%BA%D1%80%D0%B8.jpg')">
+                    <figcaption>Tomb of Sheikh Salim Chishti in Fatehpur Sikri.</figcaption>
+                </figure>
+                <figure class="child">
+                    <img src="images/vasily2.webp" alt="" onclick="showPopup('https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/%D0%92%D0%BE%D1%80%D0%BE%D1%82%D0%B0_%D0%BE%D0%BA%D0%BE%D0%BB%D0%BE_%D0%9A%D1%83%D1%82%D1%83%D0%B1-%D0%9C%D0%B8%D0%BD%D0%B0%D1%80%D0%B0._%D0%A1%D1%82%D0%B0%D1%80%D1%8B%D0%B9_%D0%94%D0%B5%D0%BB%D0%B8.jpg/800px-%D0%92%D0%BE%D1%80%D0%BE%D1%82%D0%B0_%D0%BE%D0%BA%D0%BE%D0%BB%D0%BE_%D0%9A%D1%83%D1%82%D1%83%D0%B1-%D0%9C%D0%B8%D0%BD%D0%B0%D1%80%D0%B0._%D0%A1%D1%82%D0%B0%D1%80%D1%8B%D0%B9_%D0%94%D0%B5%D0%BB%D0%B8.jpg')">
+                    <figcaption>Gate near Qutub Minar, Old Delhi.</figcaption>
+                </figure>
+                <figure class="child">
+                    <img src="images/vasily3.webp" alt="" onclick="showPopup('https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/%D0%91%D1%83%D0%B4%D0%B4%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D1%85%D1%80%D0%B0%D0%BC_%D0%B2_%D0%94%D0%B0%D1%80%D0%B4%D0%B6%D0%B8%D0%BB%D0%B8%D0%BD%D0%B3%D0%B5._%D0%A1%D0%B8%D0%BA%D0%BA%D0%B8%D0%BC.jpg/1280px-%D0%91%D1%83%D0%B4%D0%B4%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D1%85%D1%80%D0%B0%D0%BC_%D0%B2_%D0%94%D0%B0%D1%80%D0%B4%D0%B6%D0%B8%D0%BB%D0%B8%D0%BD%D0%B3%D0%B5._%D0%A1%D0%B8%D0%BA%D0%BA%D0%B8%D0%BC.jpg')">
+                    <figcaption>Buddhist Temple in Darjiling, India.</figcaption>
+                </figure>
+                <figure class="child">
+                    <img src="images/vasily4.webp" alt="" onclick="showPopup('https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/1872_Vereshchagin_Praesentation_der_Trophaeen_anagoria.JPG/800px-1872_Vereshchagin_Praesentation_der_Trophaeen_anagoria.JPG')">
+                    <figcaption>Presentation of the trophies.</figcaption>
+                </figure>
+                <figure class="child">
+                    <img src="images/vasily5.webp" alt="" onclick="showPopup('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/%D0%9C%D0%B0%D0%B2%D0%B7%D0%BE%D0%BB%D0%B5%D0%B9_%D0%93%D1%83%D1%80-%D0%AD%D0%BC%D0%B8%D1%80._%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%D0%BD%D0%B4.jpg/800px-%D0%9C%D0%B0%D0%B2%D0%B7%D0%BE%D0%BB%D0%B5%D0%B9_%D0%93%D1%83%D1%80-%D0%AD%D0%BC%D0%B8%D1%80._%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%D0%BD%D0%B4.jpg')">
+                    <figcaption>Gur Emir mausoleum, Samarkand.</figcaption>
+                </figure>
+                <figure class="child">
+                    <img src="images/vasily6.webp" alt="" onclick="showPopup('https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%D0%9C%D0%BE%D1%82%D0%B8_%D0%9C%D0%B0%D1%81%D0%B4%D0%B6%D0%B8%D0%B4.jpg/800px-%D0%9C%D0%BE%D1%82%D0%B8_%D0%9C%D0%B0%D1%81%D0%B4%D0%B6%D0%B8%D0%B4.jpg')">
+                    <figcaption>Moti Masjid in the Red Fort of Agra, inner courtyard.</figcaption>
+                </figure>
+            </div>
+        </main>
     </div>
 
     <footer>
+
+        <div class="dagrid">
+            <a href="#">Link</a> 
+            <a href="#">Link</a> 
+            <a href="#">Link</a> 
+            <a href="#">Link</a> 
+            <a href="#">Link</a>
+            <a href="#">Link</a> 
+            <a href="#">Link</a> 
+            <a href="#">Link</a> 
+            <a href="#">Link</a> 
+            <a href="#">Link</a>
+            <a href="#">Link</a> 
+            <a href="#">Link</a> 
+            <a href="#">Link</a> 
+            <a href="#">Link</a> 
+            <a href="#">Link</a>
+            <a href="#">Link</a> 
+            <a href="#">Link</a> 
+            <a href="#">Link</a> 
+            <a href="#">Link</a> 
+            <a href="#">Link</a>
+        </div>
         &copy; 2025 Pōmaikaʻi Jones
     </footer>
 </body>
