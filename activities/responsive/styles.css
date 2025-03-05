@@ -11,9 +11,8 @@ body {
 header {
     margin: 15px 5px;
     display: flex;
-    justify-content: space-around;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 header nav {
@@ -65,4 +64,46 @@ nav li:hover {
 footer {
     text-align: center;
     color:  rgba(255, 255, 255, 0.25);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: small;
+    }
+
+    .parent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 2%;
+    }
+
+    .card img {
+        width: 80%;
+    }
+
+    #feature {
+        order: -1;
+    }
+
+    header {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+@media ONLY screen AND (max-width: 300px) {
+
+    header {
+        justify-content: space-between;
+        
+    }
+
+    nav ul {
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+    }
 }
