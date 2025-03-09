@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewpo  rt" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="print.css" media="print">
@@ -22,53 +22,40 @@
         </nav>
     </header>
 
-    <main>
-        <div class="parent">
-            <div class="card">
-                <figure>
-                    <img src="../graphics/wave.jpeg" alt="Surfer riding a large wave.">
-                </figure>
-                <h3>Left</h3>
-                <p>Some text...</p>
+    <div class="content">
+        <aside>
+            <h4>The Full House Gang</h4>
+            <img src="images/family.webp" alt="">
+            <p>The Tanner Family</p>
+            <p>Along with Danny's friend, Joey, and Jesse's wife, Becky.</p>
+        </aside>
+
+        <main>
+            <div class="parent">
+                <!-- articles -->
+                <article class="child">
+                    <h2>Danny Tanner</h2>
+                    <img src="images/danny.webp" alt="">
+                    <figcaption>Danny Tanner smiling.</figcaption>
+                    <p>Danny Tanner is the loving and kind father of three daughters. As a morning show host and a bit of a neat freak, he brings structure and warmth to his family. This and his corny jokes with his big heart make him the ultimate TV dad.</p>
+                </article>
+                
+                <article class="child">
+                    <h2>Jesse Katsopolis</h2>
+                    <img src="images/jesse.webp" alt="">
+                    <figcaption>Jesse Katsopolis playing guitar.</figcaption>
+                    <p>Jesse Katsopolis is Danny's brother-in-law and the ultimate ''cool uncle''. He is probably best described by his love for Elvis and a rock musician personality that differentiates him from Danny. Despite his cool guy exterior, he has a big heart and deeply loves his family.</p>
+                </article>
+                
+                <article class="child">
+                    <h2>D.J. Tanner</h2>
+                    <img src="images/dj.webp" alt="D.J. Tanner smiling">
+                    <figcaption>D.J. Tanner smiling.</figcaption>
+                    <p>D.J. Tanner is Danny's eldest daughter and a responsible big sister. She has to balance school, friendships, and family life meanwhile having to set an example for her younger sisters. She has kindness, humor, along with typical teenage struggles. She's very relatable.</p>
+                </article>
             </div>
-
-            <div class="card" id="feature">
-                <figure>
-                    <img src="../graphics/wave.jpeg" alt="Surfer riding a large wave.">
-                </figure>
-                <h3>Main</h3>
-                <p>Some text...</p>
-            </div>
-
-            <div class="card">
-                <figure>
-                    <img src="../graphics/wave.jpeg" alt="Surfer riding a large wave.">
-                </figure>
-                <h3>Right</h3>
-                <p>Some text...</p>
-            </div>
-        </div>
-
-
-        <h2>Engagement Questions Mar-5</h2>
-        <h3>1. Why do we need a meta viewport tag?</h3>
-        <p>We use the veiwport tag to tell the browser how we want the webpage to be displayed depending on the device and dimensions of the user's screen.</p>
-        <h3>2. When you select the same tag twice, and in one of them you say "flex-direction: column;" and the other says "flex-direction: row;", which one takes priority?</h3>
-        <p>The one listed second (lower in the stylesheet) is the one that takes priority. This acts as the latest set of instructions for the browser.</p>
-        <h3>3. How do you change the CSS for a web page displayed on a phone?</h3>
-        <p>You can use a '@media' tag to indicate specific styling depending on the size of the display, such as the flex direction of elements or the layout of the navigation bar.</p>
-        
-        <h2>Engagement Questions Mar-3</h2>
-        <h3>1. Why is the viewport meta tag important?</h3>
-        <p>The viewport tag helps the wep page's content display correctly on different devices. If this is missing, all responsive elements on your page won't work.</p>
-        <h3>2. How can you adjust the CSS for printing?</h3>
-        <p>Create another stylesheet dedicated for sytling the sheet for printing. Then add to the head a link to that css with the attribute ''media = 'print'''. </p>
-        <h3>3. When would you want to adjust the CSS for printing?</h3>
-        <p>You may want to use a more accessible or universal font family when printing, such as a font that is easier for reading on paper.</p>
-        <p>You can also hide unnecessary webpage elements such as the navigation bar.</p>
-        </div>
-
-    </main>
+        </main>
+    </div>
 
     <footer>
         &copy; 2025 Pōmaikaʻi Jones
