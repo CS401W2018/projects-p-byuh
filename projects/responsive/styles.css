@@ -80,6 +80,10 @@ aside {
     transition: 0.3s;
 }
 
+.caption {
+    font-style: italic;
+}
+
 footer {
     text-align: center;
     color: rgba(255,255,255,0.5);

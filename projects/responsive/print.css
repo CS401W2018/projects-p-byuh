@@ -79,6 +79,10 @@ aside {
     transition: 0.3s;
 }
 
+.caption {
+    font-style: italic;
+}
+
 footer {
     display: hidden;
 }
