@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <title>Engagement - Tables</title>
+</head>
+<body>
+    <header>
+        <h1>Tables</h1>
+        <nav>
+            <ul>
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>My Table</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Department</th>
+                        <th>Number</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                        <th>Credits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th colspan="5" scope="rowgroup">Winter 2025</th>
+                    </tr>
+                    <tr>
+                        <td>CS</td>
+                        <td rowspan="2">140</td>
+                        <td>11:00-11:50 AM</td>
+                        <td>P2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>CS</td>
+                        
+                        <td>12:00-12:50 AM</td>
+                        <td>P3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>CS</td>
+                        <td>210</td>
+                        <td>2:00-2:50 PM</td>
+                        <td>P3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>CS</td>
+                        <td>320</td>
+                        <td>3:00-3:50 PM</td>
+                        <td>P3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th colspan="5" scope="rowgroup">Spring 2025</th>
+                    </tr>
+                    <tr>
+                        <td>CS</td>
+                        <td>320</td>
+                        <td>3:00-3:50 PM</td>
+                        <td>P3</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+                <tfood>
+                    <tr>
+                        <th id="totalcredits" colspan="4">Total Credits</th>
+                        <td headers="totalcredits">15</td>
+                    </tr>
+                </tfood>
+            </table>
+        </section>
+
+        <section>
+            <h2>Engagement Questions</h2>
+            <h3>1. When do you use a table?</h3>
+            <p>You should use a table any time you are displaying data.</p>
+            <h3>2. When do you not use a table?</h3>
+            <p>You should not use tables as a method to stylize your web page, such as creating a sidebar.</p>
+            <h3>When do you need to do extra work for table accessibility?</h3>
+            <p>It's important to use the appropriate tags and labels when wanting to associate specific headers and subheads, footers, etc with their relevant data. This is important so accessibility tools can understand what data is associated with which label.</p>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        &copy; 2025 Pōmaikaʻi Jones
+    </footer>
+</body>
+</html>
