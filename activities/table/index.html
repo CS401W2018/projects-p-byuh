@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="print.css" media="print">
+    <!-- <link rel="stylesheet" href="print.css" media="print"> -->
     <title>Engagement - Tables</title>
 </head>
 <body>
@@ -23,7 +23,8 @@
     <main>
         <section>
             <h2>My Table</h2>
-            <table border="1">
+            <table class="schedule">
+                <caption>Class Schedule</caption>
                 <thead>
                     <tr>
                         <th>Department</th>
@@ -37,21 +38,21 @@
                     <tr>
                         <th colspan="5" scope="rowgroup">Winter 2025</th>
                     </tr>
-                    <tr>
+                    <tr class="banded">
                         <td>CS</td>
-                        <td rowspan="2">140</td>
+                        <td>140</td>
                         <td>11:00-11:50 AM</td>
                         <td>P2</td>
                         <td>3</td>
                     </tr>
                     <tr>
                         <td>CS</td>
-                        
+                        <td>140</td>
                         <td>12:00-12:50 AM</td>
                         <td>P3</td>
                         <td>3</td>
                     </tr>
-                    <tr>
+                    <tr class="banded">
                         <td>CS</td>
                         <td>210</td>
                         <td>2:00-2:50 PM</td>
@@ -66,7 +67,7 @@
                         <td>3</td>
                     </tr>
                     <tr>
-                        <th colspan="5" scope="rowgroup">Spring 2025</th>
+                        <th class="banded" colspan="5" scope="rowgroup">Spring 2025</th>
                     </tr>
                     <tr>
                         <td>CS</td>
@@ -76,22 +77,28 @@
                         <td>3</td>
                     </tr>
                 </tbody>
-                <tfood>
+                <tfoot>
                     <tr>
                         <th id="totalcredits" colspan="4">Total Credits</th>
                         <td headers="totalcredits">15</td>
                     </tr>
-                </tfood>
+                </tfoot>
             </table>
         </section>
 
         <section>
-            <h2>Engagement Questions</h2>
+            <h2>Engagement Questions | Wednesday, March 12</h2>
+            <h3>1. Why don't we use the border attribute?</h3>
+            <p>The border attribute has been deprecated in the favor of the more customizable CSS table styling.</p>
+            <h3>2. What is the easiest way to color every other row a different color?</h3>
+            <p>In addition to manually assigning a class to every other row, you more easily created a alternate color effect by using a <em>psuedo class</em> that applies the styling to every even row.</p>
+            <p>For example: <code>tbody tr:nth-child(even) { background-color: gray }</code></p>
+            <h2>Engagement Questions | Monday, March 10</h2>
             <h3>1. When do you use a table?</h3>
             <p>You should use a table any time you are displaying data.</p>
             <h3>2. When do you not use a table?</h3>
             <p>You should not use tables as a method to stylize your web page, such as creating a sidebar.</p>
-            <h3>When do you need to do extra work for table accessibility?</h3>
+            <h3>3. When do you need to do extra work for table accessibility?</h3>
             <p>It's important to use the appropriate tags and labels when wanting to associate specific headers and subheads, footers, etc with their relevant data. This is important so accessibility tools can understand what data is associated with which label.</p>
         </section>
     </main>

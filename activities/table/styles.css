@@ -1,0 +1,25 @@
+.schedule {
+    /* border: solid black; */
+    background-color: white;
+    caption-side: top;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.schedule th, .schedule td {
+    /* border: thin solid black; */
+    padding: 5px;
+}
+
+.schedule thead, .schedule tfoot {
+    background-color: rgba(0, 0, 255, 0.66);
+    color: white;
+}
+
+/* .schedule .banded {
+    background-color: rgba(0, 0, 255, 0.05);
+} */
+
+.schedule tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 255, 0.05);
+}
