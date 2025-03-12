@@ -12,7 +12,7 @@
 }
 
 .schedule thead, .schedule tfoot {
-    background-color: rgba(0, 0, 255, 0.66);
+    background-color: rgba(0, 0, 125, 0.76);
     color: white;
 }
 
@@ -21,5 +21,5 @@
 } */
 
 .schedule tbody tr:nth-child(even) {
-    background-color: rgba(0, 0, 255, 0.05);
+    background-color: rgba(0, 0, 125, 0.05);
 }
