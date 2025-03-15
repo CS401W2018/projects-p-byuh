@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="print.css" media="print"> -->
+    <title>Project - Tables</title>
+</head>
+<body>
+    <header>
+        <h1>Tables</h1>
+        <nav>
+            <ul>
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="content">
+            <section>
+                <h2>My Table</h2>
+                <table class="schedule">
+                    <caption>2008 Colts Statistics | Regular Season</caption>
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Position</th>
+                            <th>TDs</th>
+                            <th>1Ds</th>
+                            <th>Pass Yds</th>
+                            <th>Y/G</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th colspan="7" scope="rowgroup">Top Receiving</th>
+                        </tr>
+                        <tr class="banded">
+                            <td>Reggie Wayne</td>
+                            <td>WR</td>
+                            <td>6</td>
+                            <td>65</td>
+                            <td>1145</td>
+                            <td>71.6</td>
+                        </tr>
+                        <tr>
+                            <td>Joseph Addai</td>
+                            <td>RB</td>
+                            <td>2</td>
+                            <td>9</td>
+                            <td>206</td>
+                            <td>17.2</td>
+                        </tr>
+                        <tr class="banded">
+                            <td>Marvin Harrison</td>
+                            <td>WR</td>
+                            <td>5</td>
+                            <td>41</td>
+                            <td>636</td>
+                            <td>42.4</td>
+                        </tr>
+                        <tr>
+                            <td>Dallas Clark</td>
+                            <td>TE</td>
+                            <td>6</td>
+                            <td>41</td>
+                            <td>848</td>
+                            <td>56.5</td>
+                        </tr>
+                        <tr>
+                            <th class="banded" colspan="6" scope="rowgroup">Top Passing</th>
+                        </tr>
+                        <tr>
+                            <td>Peyton Manning</td>
+                            <td>QB</td>
+                            <td>27</td>
+                            <td>213</td>
+                            <td>4002</td>
+                            <td>250.1</td>
+                        </tr>
+                        <tr>
+                            <td>Jim Sorgi</td>
+                            <td>QB</td>
+                            <td>0</td>
+                            <td>0.0</td>
+                            <td>178</td>
+                            <td>178.0</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th id="totalcredits" colspan="5">Total TDs</th>
+                            <td headers="totalcredits">46</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </div>
+
+        <div class="sidebar">
+            <h2>Schedule</h2>
+            <a href="https://www.deviantart.com/tlaurenzana/art/2008-Colts-Schedule-101323909"><img src="schedule.webp" alt="2008 Colts NFL game schedule."></a>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 Pōmaikaʻi Jones
+    </footer>
+</body>
+</html>
