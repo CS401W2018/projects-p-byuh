@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Engagement - Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Forms</h1>
+    </header>
+
+    <main>
+        <h2>My Form</h2>
+        <form action="processing.html" method="get">
+            <fieldset>
+                    <legend>User Information</legend>
+                <div class="form-row">
+                    <label for="fname">Full Name:</label>
+                    <input type="text" name="fullname" id="fname" value="Pōmaikaʻi Jones">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="your@email.com">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class = "form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank" disabled selected>Select a state</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="HI">Hawaii</option>
+                    </select>
+                </div>
+                <div>
+                    <div>Year in School:</div>
+                    <label><input type="radio" name="year" value="freshman">Freshman</label>
+                    <label><input type="radio" name="year" value="sophmore">Sophmore</label>
+                    <label><input type="radio" name="year" value="junior">Junior</label>
+                    <label><input type="radio" name="year" value="senior">Senior</label>
+                </div>
+            </fieldset>
+            <div class="form-row">
+                <input type="submit">
+            </div>
+        </form>
+
+        <h2>Engagement Questions</h2>
+        <ol>
+            <li>
+              <strong>The form tag has an "action" attribute. What does it do?</strong>
+              <p>The action attribute is where the data is sent (such as a processing.html page) when the user submits the form.</p>
+            </li>
+            <li>
+              <strong>The form tag has a "method" attribute. What does it do?</strong>
+              <p>The method attribute determines how the data is handled once the user submits with.</p>
+            </li>
+            <li>
+              <strong>What is the difference between a "POST" and a "GET"?</strong>
+              <p>We use a GET request when solely intend to read, or retrieve data from a server.</p>
+              <p>We use a POST request when we are sending data to be stored on the server.</p>
+            </li>
+          </ol>
+    </main>
+
+    <footer>
+        &copy; 2025 Pōmaikaʻi Jones
+    </footer>
+</body>
+</html>
