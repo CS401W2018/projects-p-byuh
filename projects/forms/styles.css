@@ -1,0 +1,75 @@
+/* General Body Styling */
+body {
+    /* Set a background color, font-family, and general padding/margin */
+    /* Ensure the layout is user-friendly */
+}
+
+/* Header Styling */
+header {
+    /* Style the header with different font, background color, and padding */
+    /* Set font size, color, and alignment */
+}
+
+/* Footer Styling */
+footer {
+    /* Style the footer similarly to the header with a different background color, padding, etc. */
+    /* Add text-align and font styling */
+}
+
+/* Main Section Styling */
+main {
+    /* Style the form container: margin, padding, and centering */
+    /* Set width for desktop and mobile responsiveness */
+}
+
+/* Form Styling */
+form {
+    /* Style the form itself: padding, margins, and overall layout */
+}
+
+/* Fieldset Styling */
+fieldset {
+    /* Style the fieldset: border, padding, and margin */
+    /* Add a border-radius or other effects */
+}
+
+/* Legend Styling */
+legend {
+    /* Style the legend: font size, color, and alignment */
+}
+
+/* Label Styling */
+label {
+    /* Style the label: font-size, margin-right for alignment, etc. */
+}
+
+/* Textbox, Password, Textarea, and Select Styling */
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    /* Style the input fields: background color, padding, borders */
+    /* Set width and margin for alignment */
+    /* Round corners or add shadows as needed */
+}
+
+/* Checkbox and Radio Button Styling */
+input[type="checkbox"],
+input[type="radio"] {
+    /* Style checkboxes and radio buttons: align them with labels */
+    /* Remove default styles and customize size or appearance */
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+    /* Style the submit button: background color, padding, font-size */
+    /* Add hover effects or transitions */
+}
+
+/* Mobile Responsiveness (Media Queries) */
+@media screen and (max-width: 768px) {
+    /* Adjust the form layout for mobile devices */
+    /* Change form element alignment to vertical */
+    /* Make submit button larger and more prominent */
+    /* Ensure labels are positioned above the input fields */
+}
