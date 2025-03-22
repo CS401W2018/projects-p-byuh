@@ -33,9 +33,9 @@
                 </div>
                 <div class="form-row2">
                     <div>Packaging Modifiers</div>
-                    <input type="checkbox" id="package-mods" name="package-mods" value="Gift">
-                    <label for="package-mods"> is a gift.</label>
-                    <input type="checkbox" id="package-mods" name="package-mods" value="Fragile">
+                    <input type="checkbox" id="package-mod-gift" name="package-mods" value="Gift">
+                    <label for="package-mod-gift"> is a gift.</label>
+                    <input type="checkbox" id="package-mod-fragile" name="package-mods" value="Fragile">
                     <label for="package-mods"> is fragile.</label>
                 </div>
                 <div class="form-row">
@@ -51,28 +51,31 @@
                     <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                 </div>
                 <div class="form-row">
-                    <div><label for="address">Address</label></div>
-                    <input type="text" name="address1" id="address" placeholder="Street address or PO Box" size="50"></br>
-                    <input type="text" name="address2" id="address" placeholder="Apt, suite, unit, building, floor, etc." size="50"></br>
-                    <label for="city">City</label>
-                    <input type="text" name="city" id="city">
-                    <label for="state">State</label>
-                    <select name="state" id="state">
-                        <option value="blank" disabled selected>Select a state</option>
-                        <option value="AL">Alabama</option>
-                        <option value="AK">Alaska</option>
-                        <option value="AZ">Arizona</option>
-                        <option value="AR">Arkansas</option>
-                        <option value="CA">California</option>
-                        <option value="CO">Colorado</option>
-                        <option value="HI">Hawaii</option>
-                    </select>
-                    <label for="zip">Zip code</label>
-                    <input type="text" name="zip" id="zip" size="7" maxlength="10">
+                    <div><label for="address1">Address Line 1</label></div>
+                    <input type="text" name="address" id="address1" placeholder="Street address or PO Box" size="50">
+                    <div><label for="address2">Address Line 2</label></div>
+                    <input type="text" name="address" id="address2" placeholder="Apt, suite, unit, building, floor, etc." size="50">
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city">
+                        <label for="state">State</label>
+                        <select name="state" id="state">
+                            <option value="blank" disabled selected>Select a state</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="HI">Hawaii</option>
+                        </select>
+                        <label for="zip">Zip code</label>
+                        <input type="text" name="zip" id="zip" size="7" maxlength="10">
+                    </div>
                 </div>
                 <div class="form-row2">
                     <input type="checkbox" id="set-default" name="set-default">
-                    <label for="package-mods"> make this my default address.</label>
+                    <label for="set-default"> make this my default address.</label>
                 </div>
                 <div class="form-row">
                     <div><label for="ship-method">Select a shipping method:</label></div>
