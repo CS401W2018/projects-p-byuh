@@ -2,19 +2,74 @@
 body {
     /* Set a background color, font-family, and general padding/margin */
     /* Ensure the layout is user-friendly */
+    background-color: rgb(52, 52, 52);
+    color: white;
+    font-weight: lighter;
+    font-size: medium;
 }
 
-/* Header Styling */
+header, footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 40px 10px;
+}
+
 header {
-    /* Style the header with different font, background color, and padding */
-    /* Set font size, color, and alignment */
+    border-bottom: solid #ffc600;
 }
 
-/* Footer Styling */
-footer {
-    /* Style the footer similarly to the header with a different background color, padding, etc. */
-    /* Add text-align and font styling */
+h1 {
+    text-shadow: 2px 2px rgb(39, 43, 28);
 }
+
+footer {
+    border-top: solid #ffc600;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+header {
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav {
+    align-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li a {
+    padding: 10px 20px;
+}
+
+nav li a {
+    color: inherit;
+    border-bottom: solid transparent;
+    transition: border-bottom 0.3s ease;
+    text-decoration: none;
+}
+
+.active a {
+    border-bottom: solid thin rgba(255,255,255,0.5);
+}
+
+nav li a:hover {
+    border-bottom: solid thin rgba(255,255,255,0.75);
+}
+main {
+    width: 800px;
+    min-width: fit-content;
+    margin: 10px auto;
+    padding: 10px 50px;
+}
+
+
 
 /* Main Section Styling */
 main {
@@ -24,50 +79,110 @@ main {
 
 /* Form Styling */
 form {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.67);
+    color: black;
+    border-radius: 5px;
     /* Style the form itself: padding, margins, and overall layout */
 }
 
-/* Fieldset Styling */
-fieldset {
-    /* Style the fieldset: border, padding, and margin */
-    /* Add a border-radius or other effects */
-}
-
-/* Legend Styling */
 legend {
-    /* Style the legend: font size, color, and alignment */
+    font-weight:bolder;
+    background-color: #ffc600;
+    border: thin solid rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);  
 }
 
-/* Label Styling */
-label {
-    /* Style the label: font-size, margin-right for alignment, etc. */
+input, textarea {
+    border: thin solid rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
 }
 
-/* Textbox, Password, Textarea, and Select Styling */
-input[type="text"],
+textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+    width: 75%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+fieldset {
+    border-radius: 5px;   
+}
+
+input[type="email"],
 input[type="password"],
-textarea,
-select {
-    /* Style the input fields: background color, padding, borders */
-    /* Set width and margin for alignment */
-    /* Round corners or add shadows as needed */
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+textarea {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);  
 }
 
-/* Checkbox and Radio Button Styling */
+input[type="email"] {
+    background-image: url('email.png');
+    background-position: 10px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+
 input[type="checkbox"],
 input[type="radio"] {
-    /* Style checkboxes and radio buttons: align them with labels */
-    /* Remove default styles and customize size or appearance */
+    vertical-align: middle;
+    cursor: pointer;
 }
 
-/* Submit Button Styling */
-button[type="submit"] {
-    /* Style the submit button: background color, padding, font-size */
-    /* Add hover effects or transitions */
+.form-row {
+    margin: 10px 0;
 }
+
+#submitb {
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+#submitb:hover {
+    background-color: #4bb4fa61;
+    transform: scale(1.05);
+}
+
 
 /* Mobile Responsiveness (Media Queries) */
 @media screen and (max-width: 768px) {
+
+    header {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        min-width: fit-content
+    }
+
+    main {
+        width: fit-content;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        vertical-align: middle;
+        cursor: pointer;
+    }
+
     /* Adjust the form layout for mobile devices */
     /* Change form element alignment to vertical */
     /* Make submit button larger and more prominent */
