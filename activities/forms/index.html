@@ -14,7 +14,7 @@
 
     <main>
         <h2>My Form</h2>
-        <form action="processing.html" method="get">
+        <form action="processing.html" method="get" id="myForm">
             <fieldset>
                     <legend>User Information</legend>
                 <div class="form-row">
@@ -25,7 +25,10 @@
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="your@email.com">
                 </div>
-                
+                <div class="form-row">
+                    <label for="age">Age</label>
+                    <input type="text" name="age" id="age">
+                </div>
                 <div class = "form-row">
                     <label for="state">State:</label>
                     <select name="state" id="state">
@@ -46,11 +49,43 @@
                     <label><input type="radio" name="year" value="junior">Junior</label>
                     <label><input type="radio" name="year" value="senior">Senior</label>
                 </div>
+                <div class="form-row">
+                    <div><label for="commentbox">Comments</label></div>
+                    <textarea id="commentbox" name="commentbox"></textarea>
+                </div>
+                <div class="form-row">
+                    <input id="submitb" type="submit">
+                </div>
             </fieldset>
             
         </form>
 
-        <h2>Engagement Questions</h2>
+        <h2>Engagement Questions March-24</h2>
+        <ol>
+            <li>
+                <strong>What is JavaScript? How did it get its name?</strong>
+                <p>JavaScript is a programming language used to add dynamic and interactive elements to a webpage. The developer's of JavaScript, Sun Microsystems, wanted their users to recognize the name Java and favor their browser.</p>
+            </li>
+            <li>
+                <strong>What are the two ways you can run JavaScript?</strong>
+                <p>
+                    <ol>
+                        <li>In the Document Object Model (DOM). In other words, the code runs in the context of the webpage.</li>
+                        <li>Through Node.js, which allows developers to run their JavaScript code in the backend of their webpage.</li>
+                    </ol>
+                </p>
+            </li>
+            <li>
+                <strong>What was the most popular front-end js library?</strong>
+                <p>JQuery used to be the most popular front-end JS library, but was limited by it's slow performance.</p>
+            </li>
+            <li>
+                <strong>What is the most popular front-end js library today?</strong>
+                <p>Now the most popular front-end JS library is React, which was developed by Facebook/Meta.</p>
+            </li>
+        </ol>
+
+        <h2>Engagement Questions March-17</h2>
         <ol>
             <li>
               <strong>The form tag has an "action" attribute. What does it do?</strong>
@@ -71,5 +106,14 @@
     <footer>
         &copy; 2025 Pōmaikaʻi Jones
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event) {
+            event.preventDefault();
+            alert("Form Submitted");
+            const fname = document.getElementById('fname').value;
+
+            console.log(fname)
+        });
+    </script>
 </body>
 </html>

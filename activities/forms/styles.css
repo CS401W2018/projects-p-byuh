@@ -1,28 +1,23 @@
 
-/*#ffc600*/
-
-.schedule {
-    /* border: solid black; */
-    background-color: white;
-    caption-side: top;
-    border-spacing: 0;
-    border-collapse: collapse;
+form {
+    background-color: rgba(217, 215, 250, 0.5);
+    color: black;
+    border-radius: 5px;
 }
 
-.schedule th, .schedule td {
-    /* border: thin solid black; */
-    padding: 5px;
+legend {
+    font-weight:bolder;
+    border: thin solid black;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);  
+    padding: 5px 5px;
 }
 
-.schedule thead, .schedule tfoot {
-    background-color: rgba(0, 0, 125, 0.76);
-    color: white;
-}
-
-/* .schedule .banded {
-    background-color: rgba(0, 0, 255, 0.05);
-} */
-
-.schedule tbody tr:nth-child(even) {
-    background-color: rgba(0, 0, 125, 0.05);
+textarea {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+    width: 75%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: none;
 }
