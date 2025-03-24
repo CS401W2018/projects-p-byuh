@@ -24,10 +24,12 @@
                 <div class="form-row">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="your@email.com">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
                 </div>
                 <div class="form-row">
                     <label for="age">Age</label>
-                    <input type="text" name="age" id="age">
+                    <input type="number" name="age" id="age" min="1" max="150">
                 </div>
                 <div class = "form-row">
                     <label for="state">State:</label>
@@ -109,10 +111,24 @@
     <script>
         document.getElementById('myForm').addEventListener('submit',function(event) {
             event.preventDefault();
-            alert("Form Submitted");
+            // alert("Form Submitted");
             const fname = document.getElementById('fname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const age = document.getElementById('age').value;
 
-            console.log(fname)
+            if (!fname || !email) {
+                alert("You are missing your fullname or email!");
+                return;
+            };
+
+            const formData = {
+                name: fname,
+                email: email,
+                password: password,
+                age: age
+            };
+            console.log(formData);
         });
     </script>
 </body>
