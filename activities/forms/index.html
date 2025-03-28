@@ -14,6 +14,7 @@
 
     <main>
         <h2>My Form</h2>
+        <div class="message"></div>
         <form action="processing.html" method="get" id="myForm">
             <fieldset>
                     <legend>User Information</legend>
@@ -62,6 +63,18 @@
             
         </form>
 
+        <h2>Engagement Questions March-28</h2>
+        <ol>
+            <li>
+                <strong>What is AJAX?</strong>
+                <p>AJAX (Asynchronous Javascript And XHTML) is a method to have your webpage send and recieve data in the background, allowing data and elements of your page to be updated without needing to reload the webpage entirely.</p>
+            </li>
+            <li>
+                <strong>Why do you put your JS Code in a separate file?</strong>
+                <p>It allows for the javascript to be easily used and shared by multiple pages on your website, preventing redundant code on your webpage. It also allows for more streamlined collaboration on websites, as you can have developers working on different files for the same webpage.</p>
+            </li>
+        </ol>
+
         <h2>Engagement Questions March-24</h2>
         <ol>
             <li>
@@ -108,28 +121,6 @@
     <footer>
         &copy; 2025 Pōmaikaʻi Jones
     </footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit',function(event) {
-            event.preventDefault();
-            // alert("Form Submitted");
-            const fname = document.getElementById('fname').value;
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            const age = document.getElementById('age').value;
-
-            if (!fname || !email) {
-                alert("You are missing your fullname or email!");
-                return;
-            };
-
-            const formData = {
-                name: fname,
-                email: email,
-                password: password,
-                age: age
-            };
-            console.log(formData);
-        });
-    </script>
+    <script src="form.js"></script>
 </body>
 </html>
