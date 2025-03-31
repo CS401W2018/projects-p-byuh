@@ -1,114 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
-    <title>Project - Forms</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Store.com</h1>
-        <nav>
-            <ul>
-                <li class="active"><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex">
+        <title>Project - Forms</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Store.com</h1>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <form action="processing.html" method="get">
-            <fieldset>
-                <legend>Shopping Checkout</legend>
-                <div class="form-row">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" required>
-                </div>
-                <div class="form-row2">
-                    <div>Packaging Modifiers</div>
-                    <input type="checkbox" id="package-mod-gift" name="package-mods" value="Gift">
-                    <label for="package-mod-gift"> is a gift.</label>
-                    <input type="checkbox" id="package-mod-fragile" name="package-mods" value="Fragile">
-                    <label for="package-mod-fragile"> is fragile.</label>
-                </div>
-                <div class="form-row">
-                    <label for="quantity">Quantity</label>
-                    <input type="number" name="quantity" id="quantity" min="1" max="99" value="1">
-                </div>
-                <div class="form-row">
-                    <label for="name">Full name</label>
-                    <input type="text" name="name" id="name">
-                </div>
-                <div class="form-row">
-                    <label for="phone">Phone number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                </div>
-                <div class="form-row">
-                    <div><label for="address1">Address Line 1</label></div>
-                    <input type="text" name="address" id="address1" placeholder="Street address or PO Box" size="50">
-                    <div><label for="address2">Address Line 2</label></div>
-                    <input type="text" name="address" id="address2" placeholder="Apt, suite, unit, building, floor, etc." size="50">
-                    <div>
-                        <label for="city">City</label>
-                        <input type="text" name="city" id="city">
-                        <label for="state">State</label>
-                        <select name="state" id="state">
-                            <option value="blank" disabled selected>Select a state</option>
-                            <option value="AL">Alabama</option>
-                            <option value="AK">Alaska</option>
-                            <option value="AZ">Arizona</option>
-                            <option value="AR">Arkansas</option>
-                            <option value="CA">California</option>
-                            <option value="CO">Colorado</option>
-                            <option value="HI">Hawaii</option>
-                        </select>
-                        <label for="zip">Zip code</label>
-                        <input type="text" name="zip" id="zip" size="7" maxlength="10">
+        <main>
+            <div id="message"></div>
+            <form action="processing.html" method="GET" id="myForm">
+                <fieldset>
+                    <legend>Shopping Checkout</legend>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
                     </div>
-                </div>
-                <div class="form-row2">
-                    <input type="checkbox" id="set-default" name="set-default">
-                    <label for="set-default"> make this my default address.</label>
-                </div>
-                <div class="form-row">
-                    <div>Select a shipping method:</div>
-                    <div>
-                        <input type="radio" name="ship-method" value="standard" id="ship-standard">
-                        <label for="ship-standard">FREE — Standard (5-10 business days)</label>
+                    <div class="form-row2">
+                        <div>Packaging Modifiers</div>
+                        <input type="checkbox" id="package-mod-gift" name="package-mods" value="Gift">
+                        <label for="package-mod-gift"> is a gift.</label>
+                        <input type="checkbox" id="package-mod-fragile" name="package-mods" value="Fragile">
+                        <label for="package-mod-fragile"> is fragile.</label>
                     </div>
-                    <div>
-                        <input type="radio" name="ship-method" value="express" id="ship-express">
-                        <label for="ship-express"> +$5.99 — Express (3-5 business days)</label>
+                    <div class="form-row">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" name="quantity" id="quantity" min="1" max="99" value="1">
                     </div>
-                    <div>
-                        <input type="radio" name="ship-method" value="express" id="ship-overnight">
-                        <label for="ship-overnight"> +$12.99  — Overnight First-class (1 business day)</label>
+                    <div class="form-row">
+                        <label for="name">Full name</label>
+                        <input type="text" name="name" id="name">
                     </div>
-                </div>
-                
-                <div class="form-row">
-                    <label for="ship-details">Add delivery instructions</label>
-                </div>
-                <div class="form-row">
-                    <textarea id="ship-details" name="ship-details">Indicate any additional delivery instructions, such as the security code or a designated drop location.</textarea>
-                </div>
-                <div class="form-row">
-                    <input id="submitb" type="submit">
-                </div>
-            </fieldset>
-        </form>
-    </main>
-    
-    <footer>
-        &copy; 2025 Pōmaikaʻi Jones
-    </footer>
-
-</body>
-</html>
+                    <div class="form-row">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                    <div class="form-row">
+                        <div><label for="address1">Address Line 1</label></div>
+                        <input type="text" name="address" id="address1" placeholder="Street address or PO Box" size="50">
+                        <div><label for="address2">Address Line 2</label></div>
+                        <input type="text" name="address" id="address2" placeholder="Apt, suite, unit, building, floor, etc." size="50">
+                        <div>
+                            <label for="city">City</label>
+                            <input type="text" name="city" id="city">
+                            <label for="state">State</label>
+                            <select name="state" id="state">
+                                <option value="blank" disabled selected>Select a state</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="HI">Hawaii</option>
+                            </select>
+                            <label for="zip">Zip code</label>
+                            <input type="text" name="zip" id="zip" size="7" maxlength="10">
+                        </div>
+                    </div>
+                    <div class="form-row2">
+                        <input type="checkbox" id="set-default" name="set-default">
+                        <label for="set-default"> make this my default address.</label>
+                    </div>
+                    <div class="form-row">
+                        <div>Select a shipping method:</div>
+                        <div>
+                            <input type="radio" name="ship-method" value="standard" id="ship-standard">
+                            <label for="ship-standard">FREE — Standard (5-10 business days)</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="ship-method" value="express" id="ship-express">
+                            <label for="ship-express"> +$5.99 — Express (3-5 business days)</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="ship-method" value="express" id="ship-overnight">
+                            <label for="ship-overnight"> +$12.99  — Overnight First-class (1 business day)</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="ship-details">Add delivery instructions</label>
+                    </div>
+                    <div class="form-row">
+                        <textarea id="ship-details" name="ship-details">Indicate any additional delivery instructions, such as the security code or a designated drop location.</textarea>
+                    </div>
+                    <div class="form-row">
+                        <input id="submitb" type="submit">
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+        
+        <footer>
+            &copy; 2025 Pōmaikaʻi Jones
+        </footer>
+        <script src="form.js"></script>
+    </body>
+    </html>
