@@ -17,7 +17,7 @@ document.getElementById('myForm').addEventListener('submit',function(event) {
     const ship_standard = document.getElementById('ship-standard').value;
     const ship_express = document.getElementById('ship-express').value;
     const ship_overnight = document.getElementById('ship-overnight').value;
-    const ship_details = document.getElementById('ship_details').value;
+    const ship_details = document.getElementById('ship-details').value;
     
     const submitb = document.getElementById('submitb').value
     submitb.disabled = true;
