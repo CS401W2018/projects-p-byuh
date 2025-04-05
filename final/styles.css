@@ -1,0 +1,167 @@
+body {
+    background-color: rgb(46, 47, 41);
+    color: rgba(255, 255, 255, 1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#wrapper {
+    /* width: 800px;
+    height: 1000px;
+    margin: 10px auto;
+    padding: 10px 50px;
+    border: thin solid rgba(255, 255, 255, 0.034);
+    border-radius: 1px;
+
+    background-image: url('sasia.png');
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-position: center; */
+}
+
+#head-img {
+    background-size: cover; /* Scales to cover the area */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#page-index #head-img {
+    background-image: url('media/chef-header.webp');
+}
+
+#page-menu #head-img {
+    background-image: url('media/menu-header.webp');
+}
+
+#page-chef #head-img {
+    background-image: url('media/chef2-header.webp');
+}
+
+
+h1, h2, h3, nav li {
+    text-transform: lowercase;
+    text-shadow: 2px 2px rgb(39, 43, 28);
+}
+
+header {
+    margin: 10px 20px;
+    margin-top: 0;
+    margin-bottom: 559px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav {
+    align-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    text-wrap: nowrap;
+}
+
+nav li a {
+    padding: 10px 20px;
+}
+
+nav li a {
+    color: inherit;
+    border-bottom: solid transparent;
+    transition: border-bottom 0.3s ease;
+    text-decoration: none;
+}
+
+.active a {
+    border-bottom: solid thin rgba(255,255,255,0.5);
+}
+
+nav li a:hover {
+    border-bottom: solid thin rgba(255,255,255,0.75);
+}
+
+.sub-header {
+    padding: 0 200px;
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+main {
+    margin: 100px;
+}
+
+.floating{
+    font-style: italic;
+    text-align: center;
+}
+
+.floatimg {
+    border: thin solid black;
+    border-radius: 2px;
+    box-shadow: 1px 5px 5px rgba(0,0,0,0.5);
+}
+
+footer {
+    bottom: 0;
+    text-align: center;
+    color:  rgba(255, 255, 255, 0.25);
+}
+
+hr {
+    border-color: rgba(0, 0, 0, 0);
+}
+
+@media only screen and (max-width: 768px) {
+
+    nav li a {
+        padding: 10px 15px;
+    }
+
+    h2, h3 {
+        text-align: center;
+    }
+
+    main {
+        margin: 25px;
+    }
+
+    .sub-header {
+        display: none;
+    }
+
+    header {
+        text-align: center;
+        align-content: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+}
+
+@media ONLY screen AND (max-width: 560px) {
+
+    #head-img {
+       background-position-y: top;
+       background-size: auto;
+       margin-bottom: -300px;
+    }
+
+    nav ul {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px
+    }
+
+}
