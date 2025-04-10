@@ -71,20 +71,6 @@ input[type="submit"]:hover {
     background-color: #4b2e2e;
 }
 
-
-.form-row:nth-child(1) {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 10px;
-}
-
-.form-row:nth-child(1) label:nth-child(1),
-.form-row:nth-child(1) input:nth-child(2),
-.form-row:nth-child(1) label:nth-child(3),
-.form-row:nth-child(1) input:nth-child(4) {
-    grid-column: span 1;
-}
-
 textarea {
     resize: vertical;
     min-height: 100px;
