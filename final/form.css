@@ -1,0 +1,92 @@
+form, input, label, textarea, fieldset, legend {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+#myForm {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4b2e2e;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="time"],
+textarea {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #8b5c5c;
+    box-shadow: 0 0 5px rgba(139, 92, 92, 0.3);
+    outline: none;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #4b2e2e;;
+}
+
+input[type="submit"] {
+    background-color: #8b5c5c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #4b2e2e;
+}
+
+
+.form-row:nth-child(1) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+.form-row:nth-child(1) label:nth-child(1),
+.form-row:nth-child(1) input:nth-child(2),
+.form-row:nth-child(1) label:nth-child(3),
+.form-row:nth-child(1) input:nth-child(4) {
+    grid-column: span 1;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+}
