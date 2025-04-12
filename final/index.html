@@ -6,31 +6,83 @@
     <meta name="robots" content="noindex">
     <link rel="stylesheet" href="styles.css">
     <title>Alexander's | Premier Dining</title>
-    <meta name="description" content="TO-DO: Meta description goes here...">
+    <meta name="description" content="Experience premier Italian dining at the Ala Moana Shopping Center.">
+    <!-- Schema -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Alexander's",
+          "image": "",
+          "@id": "",
+          "url": "https://cs401w2018.github.io/projects-p-byuh/final/index.html",
+          "telephone": "5555555555",
+          "priceRange": "$$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1450 Ala Moana Blvd",
+            "addressLocality": "Honolulu",
+            "addressRegion": "HI",
+            "postalCode": "96814",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 21.2912328,
+            "longitude": -157.8443272
+          },
+          "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday"
+            ],
+            "opens": "11:00",
+            "closes": "22:00"
+          },{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "12:00",
+            "closes": "23:30"
+          }] 
+        }
+    </script>
 </head>
 <body id="page-index">
-    <div id="head-img">        
-        <div id="wrapper">
-            <header>
-                <h1>Alexander's</h1>
-                <nav>
-                    <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="reservations.html">Reservations</a></li>
-                        <li><a href="meet-the-chef.html">Meet the Chef</a></li>
-                        <li><a href="our-history.html">Our History</a></li>
-                    </ul>
-                </nav> 
-            </header>   
-        </div>
-        <hr>
-    </div>
+    <div id="hero-img"></div>        
+        <header>
+            <h1>Alexander's</h1>
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="meet-the-chef.html">Meet the Chef</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav> 
+        </header>   
         <main>
-            <div class="fade-in-up">
-                <h2>Welcome</h2>
-                <p>Nestled in the heart of Oahu, Chef Alexander's restaurant is where the soul of Italy meets the spirit of Hawaii. With a Michelin-starred menu that celebrates the finest Italian ingredients and the freshest local produce, each dish is a harmonious blend of tradition and innovation. </p>
-                <p>Experience an unforgettable dining journey where authentic flavors and modern techniques come together in a setting that is as inviting as it is elegant.</p>
+            <section>
+                <div class="fade-in-up">
+                    <h2>Welcome</h2>
+                    <p>Nestled in the heart of Oahu, Chef Alexander's restaurant is where the soul of Italy meets the spirit of Hawaii. With a Michelin-starred menu that celebrates the finest Italian ingredients and the freshest local produce, each dish is a harmonious blend of tradition and innovation.</p>
+                    <p>Experience an unforgettable dining journey where authentic flavors and modern techniques come together in a setting that is as inviting as it is elegant.</p>
+                </div>
+            </section>
+            <div class="carousel fade-in-up">
+                <div class="carousel-imgs">
+                  <img src="media/dish-seafood.webp" alt="Seafood pasta dish.">
+                  <img src="media/dish-mushrooms.webp" alt="Pasta with mushrooms.">
+                  <img src="media/dish-ossobuco.webp" alt="Ossobuco dish.">
+                  <img src="media/dish-carbonara.webp" alt="A pasta carbonara dish.">
+                </div>
             </div>
             <div class="fade-in-up" id="info-grid">
                 <h2>Our Location</h2>
@@ -50,6 +102,11 @@
         </main>
     
     <footer> 
+        <div class="social-links">
+            <a href="www.instagram.com"><img class="social-icon" src="media/icons/instagram.svg" alt="Alexander's Instagram page"></a>
+            <a href="www.facebook.com"><img class="social-icon" src="media/icons/facebook.svg" alt="Alexander's Facebook page"></a>
+            <a href="www.twitter.com"><img class="social-icon" src="media/icons/twitter.svg" alt="Alexander's Twitter page"></a>
+        </div>
         <div>&copy; 2025 Pōmaikaʻi Jones</div>
     </footer>
     <script src="script.js"></script>

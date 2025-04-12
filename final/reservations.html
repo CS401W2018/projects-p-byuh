@@ -7,76 +7,78 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="form.css">
     <title>Menu | Alexander's Premier Dining</title>
-    <meta name="description" content="TO-DO: Meta description goes here...">
+    <meta name="description" content="Book your reservation with us today!">
 </head>
 <body id="page-reserve">
-    <div id="head-img">        
-        <div id="wrapper">
-            <header>
-                <h1>Alexander's | Reservations</h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li class="active"><a href="reservations.html">Reservations</a></li>
-                        <li><a href="meet-the-chef.html">Meet the Chef</a></li>
-                        <li><a href="our-history.html">Our History</a></li>
-                    </ul>
-                </nav> 
-            </header>   
-        </div>
+    <div id="hero-img"></div>       
+    <header>
+        <h1>Alexander's | Reservations</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li class="active"><a href="reservations.html">Reservations</a></li>
+                <li><a href="meet-the-chef.html">Meet the Chef</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav> 
+    </header>   
+
+    <main>
         <div class="sub-header fade-in-up">
             <h2>Reserve a Table</h2>
             <p>Whether you need a large table for all the family, or you're just planning a romantic dinner for two, we are happy to accomadate you.</p>
-          </div>
-        <hr>
-    </div>
-        <main>
-            <div class="menu fade-in-up">
-                <div id="message"></div>
-                <form action="processing.html" method="GET" id="myForm">
-                    <fieldset>
-                        <legend>Reservations Booking</legend>
-                        <div class="form-row">
-                            <label for="fname">First Name</label>
-                            <input type="text" name="fname" id="fname">
-                        </div>
-                        <div class="form-row">
-                            <label for="fname">Last Name</label>
-                            <input type="text" name="lname" id="lname">
-                        </div>
-                        <div class="form-row">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
-                        </div>
-                        <div class="form-row">
-                            <label for="quantity">Party Size</label>
-                            <input type="number" name="quantity" id="quantity" min="1" max="15" value="1">
-                        </div>
-                        <div class="form-row">
-                            <label for="phone">Phone number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                        </div>
-                        <div class="form-row">
-                            <label for="time">Choose a time</label>
-                            <input type="time" id="time" name="time" min="11:00" max="21:00" value="19:00" step="300">
-                        </div>
-                        <div class="form-row">
-                            <label for="visit-details">Additional information</label>
-                        </div>
-                        <div class="form-row">
-                            <textarea id="visit-details" name="ship-details" placeholder="Indicate any additional details or instructions for us to make your visit as special as possible."></textarea>
-                        </div>
-                        <div class="form-row">
-                            <input id="submitb" type="submit">
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-        </main>
+        </div>
+        <div class="menu fade-in-up">
+            <div id="message"></div>
+            <form action="processing.html" method="GET" id="myForm">
+                <fieldset>
+                    <legend>Reservations Booking</legend>
+                    <p><em>Fill out the information below. For parties larger than 15, please give us a call or contact our <a href="mailto:eventcoordinator@alexanders.com">event coordinator</a>.</em></p>
+                    <div class="form-row">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" id="fname">
+                    </div>
+                    <div class="form-row">
+                        <label for="fname">Last Name</label>
+                        <input type="text" name="lname" id="lname">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-row">
+                        <label for="quantity">Party Size</label>
+                        <input type="number" name="quantity" id="quantity" min="1" max="15" value="1">
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                    <div class="form-row">
+                        <label for="time">Choose a time</label>
+                        <input type="time" id="time" name="time" min="11:00" max="21:00" value="19:00" step="300">
+                    </div>
+                    <div class="form-row">
+                        <label for="visit-details">Additional information</label>
+                    </div>
+                    <div class="form-row">
+                        <textarea id="visit-details" name="ship-details" placeholder="Indicate any additional details or instructions for us to make your visit as special as possible."></textarea>
+                    </div>
+                    <div class="form-row">
+                        <input id="submitb" type="submit">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
     
-    
-    <footer>
+    <footer> 
+        <div class="social-links">
+            <a href="www.instagram.com"><img class="social-icon" src="media/icons/instagram.svg" alt="Alexander's Instagram page"></a>
+            <a href="www.facebook.com"><img class="social-icon" src="media/icons/facebook.svg" alt="Alexander's Facebook page"></a>
+            <a href="www.twitter.com"><img class="social-icon" src="media/icons/twitter.svg" alt="Alexander's Twitter page"></a>
+        </div>
         <div>&copy; 2025 Pōmaikaʻi Jones</div>
     </footer>
     <script src="script.js"></script>

@@ -9,7 +9,7 @@
       }
     });
   }, {
-    threshold: 0.25
+    threshold: 0.10
   });
 
   fadeEls.forEach(el => observer.observe(el));

@@ -17,6 +17,12 @@ fieldset {
     padding: 0;
 }
 
+fieldset p {
+    color: #4b2e2ec0;
+    font-size: small;
+    margin-top: 0;
+}
+
 legend {
     font-size: 1.75rem;
     font-weight: bold;

@@ -8,44 +8,70 @@ body {
     height: 100%;
 }
 
-#head-img {
-    position: relative;
+section {
+    line-height: 1.75;
+}
+
+:link {
+    color: rgb(133, 216, 231);
+}
+
+:visited {
+    color: rgb(145, 133, 231);
+}
+
+#hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 90vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    z-index: -1;
+}
+ 
+/*  a cool little effect to have hero img fade in */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
   
 
-#page-index #head-img {
-    background-image: url('media/chef-header.webp');
+#page-index #hero-img {
+    background-image: url('media/chef-hero.webp');
 }
 
-#page-menu #head-img {
-    background-image: url('media/menu-header2.webp');
+#page-menu #hero-img {
+    background-image: url('media/menu-hero.webp');
 }
 
-#page-chef #head-img {
-    background-image: url('media/chef2-header.webp');
+#page-chef #hero-img {
+    background-image: url('media/chef2-hero.webp');
 }
 
-#page-reserve #head-img {
-    background-image: url('media/reserve-header.webp');
+#page-reserve #hero-img {
+    background-image: url('media/reserve-hero.webp');
 }
 
-#page-history #head-img {
-    background-image: url('media/history-header.webp');
+#page-history #hero-img {
+    background-image: url('media/history-hero.webp');
 }
 
 h1, h2, h3, nav li {
     /* text-transform: lowercase; */
     text-shadow: 2px 2px rgb(39, 43, 28);
+    text-align: center;
 }
 
 header {
     margin: 10px 20px;
     margin-top: 0;
-    margin-bottom: 559px;
+    margin-bottom: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -75,6 +101,10 @@ nav li a {
     text-decoration: none;
 }
 
+nav li a:visited {
+    color: inherit;
+}
+
 .active a {
     border-bottom: solid thin rgba(255,255,255,0.5);
 }
@@ -101,7 +131,7 @@ nav li a:hover {
 }
 
 main {
-    margin: 100px;
+    margin: 50px 100px;
 }
 
 .floating{
@@ -121,7 +151,7 @@ main {
     gap: 20px;
     max-width: 800px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -146,9 +176,42 @@ main {
     text-decoration: underline;
 }
 
+.carousel {
+    overflow: hidden;
+    position: relative;
+    margin: 2rem auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+  
+.carousel-imgs {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    animation: slide 18s ease-in-out infinite;
+}
+  
+.carousel-imgs img {
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* animations for the carousel iamges above */
+@keyframes slide {
+    0%, 15%   { transform: translateX(0); }
+    25%, 40%  { transform: translateX(-720px); }
+    50%, 65%  { transform: translateX(-1440px); }
+    75%, 90%  { transform: translateX(-720px); }
+    100%      { transform: translateX(0); }
+}
+
 .awards {
     display: flex;
     justify-content: center;
+}
+
+iframe {
+    display: flex;
+    margin: 0 auto;
 }
 
 .references {
@@ -167,6 +230,18 @@ footer {
     text-align: center;
     color:  rgba(255, 255, 255, 0.65);
     margin: 20px 0;
+}
+
+.social-links {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    filter: invert(85%)
 }
 
 hr {
@@ -217,13 +292,33 @@ hr {
     #info-grid {
         grid-template-columns: 1fr;
     }
+
+    .carousel-imgs img {
+        width: 100vw;
+    }
+
+    @keyframes slide {
+        0%, 10%   { transform: translateX(0); }
+        20%, 30%  { transform: translateX(-100vw); }
+        40%, 50%  { transform: translateX(-200vw); }
+        60%, 70%  { transform: translateX(-300vw); }
+        80%, 90%  { transform: translateX(-200vw); }
+        90%, 100%  { transform: translateX(-100vw); }
+    }
 }
 
 @media ONLY screen AND (max-width: 560px) {
 
-    #head-img {
+    h1 {
+        font-size: larger;
+    }
+
+    #hero-img {
         height: 50vh;
-       
+    }
+
+    header {
+        margin-bottom: 20vh;
     }
 
     nav ul {
@@ -235,7 +330,7 @@ hr {
     }
 
     nav ul li {
-        margin: 10px
+        margin: 15px 10px
     }
 
 }
