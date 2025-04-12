@@ -95,14 +95,14 @@ nav li a {
 }
 
 nav li a {
-    color: inherit;
+    color: white;
     border-bottom: solid transparent;
     transition: border-bottom 0.3s ease;
     text-decoration: none;
 }
 
 nav li a:visited {
-    color: inherit;
+    color: white;
 }
 
 .active a {
