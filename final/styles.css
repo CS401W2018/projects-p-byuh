@@ -20,6 +20,14 @@ section {
     color: rgb(145, 133, 231);
 }
 
+nav :link {
+    color: white;
+}
+
+nav :visited {
+    color: white;
+}
+
 #hero-img {
     position: absolute;
     top: 0;
